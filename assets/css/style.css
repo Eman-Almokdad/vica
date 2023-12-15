@@ -304,4 +304,7 @@ nav ul{
             order: -1;
             margin-bottom:20px ;
         }
+        .row-service{
+            width: 100vh;
+        }
     }
