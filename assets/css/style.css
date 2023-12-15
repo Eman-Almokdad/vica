@@ -161,6 +161,7 @@ nav ul{
         position: relative;
         display: flex;
         justify-content: space-around;
+        gap: 70px;
         overflow-x: auto;
         
         
