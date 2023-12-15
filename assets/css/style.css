@@ -156,6 +156,7 @@ nav ul{
         
     }
     .s-services{
+        /* padding-left: 80px; */
         margin-top: 64px;
         height: 140px;
         position: relative;
@@ -175,6 +176,7 @@ nav ul{
     }
 
     .btn-service{
+        padding: 10px;
         height: 80px;
         display: flex;
         flex-direction: column;
