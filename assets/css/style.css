@@ -3,7 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Orgon Plan', sans-serif;
+    
+
 }
+/* @font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-Black.woff);
+} */
 header{
     height: 100vh;
 }
@@ -41,8 +47,13 @@ nav ul{
         font-weight: 400;
 
     }
+    .font{
+        color: #1C1B1F;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
     nav li :hover{
-        font-weight: 600;
+        line-height: 64px; /* 320% */
         
     }
     .nav-men {
@@ -88,6 +99,7 @@ nav ul{
         background-position: center;
         background-size: cover;
         height: 100%;
+        width: 100%;
         
     }
     .hero-img-2{
@@ -108,15 +120,18 @@ nav ul{
         z-index: 3;
     }
     .coll{
-        height:  70%;
+        height:  65%;
         width: 2px;
         position: absolute;
-        top: 11.062rem;
-        left: 2.67rem;
+        bottom: 0px;
+        left: 4.625rem;
+        /* top: 11.062rem;
+        left: 4.625rem; */
         z-index: 8;
         background-color: #F8B11A;
     }
     .left-hero{
+        padding-left: 20px;
         position: absolute;
         top: 11.062rem;
         left: 4.375rem;
@@ -130,28 +145,37 @@ nav ul{
         line-height: 144.017%; /* 46.085px */
         text-transform: capitalize;
     }
+    .red{
+        color: var(--Secondary, #C81517);
+    }
     .left-hero li{
         color: var(--Black, #1C1B1F);
         font-size: 1.25rem;
         font-weight: 400;
         line-height: 34px; /* 170% */
+        list-style-image: url(../image/marker.svg);
+        
 
     }
-    .left-hero ul li::marker{
-        font-size: 2.5rem;
-        color: #F29039  !important;
-        /* border: 2px #F29039 solid ; */
+    .right-hero{
+        width: 100%;
+        height: 100%;
         
+        position: relative;
     }
+
     .bgcolor{
         background-color: rgba(242, 144, 57, 0.30) !important;
+        border-radius: 5px;
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15), 2px 2px 7px 1px rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(12px);
     }
 
     /* ---------------------------------------------------------------------- */
 
     .services{
         margin-top: 6.25rem;
-        margin-left: 4.625rem;
+        margin-left: 80px;
         
         
     }
@@ -182,8 +206,11 @@ nav ul{
         flex-direction: column;
         justify-content: space-between;
         align-items:center ;
-        gap: 5px;
         
+        
+    }
+    .flex-shrink{
+        flex-shrink: 0;
     }
     .btn-service img{
         position: absolute;
@@ -199,6 +226,10 @@ nav ul{
         justify-content: center;
         align-items: center;
         background-color: white;
+        color: #000;
+        font-size: 1.25rem;
+        font-weight: 400;
+        text-transform: capitalize;
         
     }
     .btn-service button:hover{
@@ -226,19 +257,23 @@ nav ul{
         position: absolute;
         top: 50%;
     }
-    .coll-service{
+    .coll-service {
         width: 2px;
         height: 130%;
         background-color: #F8B11A;
         position: absolute;
-
+        left: 80px;
     }
-    .col-svg{
-        display: block;
+    .coll-service2{
+        width: 2px;
+        height: 100%;
+        background-color: #F8B11A;
         position: absolute;
-        top: 60%;
-        z-index: 3;
-        transform: translateX(-50%);
+        left: 15px;
+        display: none;
+    }
+    .m-left{
+        margin-left: -5px;
     }
     .part-2{
         margin-top: 6.25rem;
@@ -253,6 +288,7 @@ nav ul{
         justify-content: space-around;
         flex-direction: column;
         width: 45%;
+        position: relative;
     }
     .span-section-3{
         color: #000;
@@ -264,13 +300,15 @@ nav ul{
     {
         max-width: 100%;
 
-      }
-      .p-section{
+    }
+    .p-section{
+        margin-bottom: 16px;
         color: #000;
         font-size: 2.437rem;
         font-weight: 400;
         text-transform: capitalize;
-      }
+        list-style-image: url(../image/marker.svg);
+    }
     
 
 
@@ -279,26 +317,51 @@ nav ul{
         html{
             font-size: 10px;
         }
+        nav img{
+            width: 78px;
+        
+        }
         nav ul{
             display:none;
-          }
-          .nav-men{
+        }
+        .nav-men{
             display:block;
 
-           }
-           .en{
+        }
+        .en{
             display:block;
-           }
+        }
         .English{
             display:none;
         }
         .btn-nav{
             display: none;
         }
+        .left-hero{
+            width: 80%;
+            padding-right: 20px;
+        }
+        .right-hero{
+            overflow:hidden;
+            position: relative;
+        }
+        .hero-img-3{
+            width: 538px;
+            left: 20px;
+        }
         .part-2{
             flex-direction: column;
         }
+        .m-left{
+            margin-left: 10px;
+            padding-right: 28px;
+        }
+        .p-section{
+            font-size: 24px;
+
+        }
         .cont{
+            
             width: 100%;
             justify-content: space-between;
         }
@@ -307,6 +370,20 @@ nav ul{
             margin-bottom:20px ;
         }
         .row-service{
-            width: 100vh;
+            width: 100%;
+        }
+        .services{
+            margin-left: 0px;
+        }
+        .s-services{
+            width: 100%;   
+        }
+        .coll-service{
+            display: none;
+    
+        }
+        .coll-service2{
+            display: block;
+            height: 100%;
         }
     }
