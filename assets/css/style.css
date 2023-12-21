@@ -6,10 +6,35 @@
     
 
 }
-/* @font-face {
+@font-face {
     font-family: 'Orgon Plan';
     src: url(../Orgon-Plan/OrgonPlan-Black.woff);
-} */
+}
+@font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-Bold.woff);
+}
+@font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-DemiBold.woff);
+}
+@font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-ExtraBold.woff);
+}
+@font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-Light.woff);
+}
+@font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-Medium.woff);
+}
+@font-face {
+    font-family: 'Orgon Plan';
+    src: url(../Orgon-Plan/OrgonPlan-Regular.woff);
+}
+
 header{
     height: 100vh;
 }
